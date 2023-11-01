@@ -1,0 +1,69 @@
+.episodeTitle {
+  display: flex;
+  width: 58%;
+  padding-bottom: 1rem;
+  margin-left: 21%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 32px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.episodeInfo {
+  display: flex;
+  position: relative;
+  margin-top: -0.5rem;
+  padding-bottom: 1rem;
+  width: 58%;
+  margin-left: 21%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  border-bottom: 1px solid #f7f3f3;
+}
+
+.detailsGridContainer {
+  display: grid;
+  gap: 1%;
+  position: absolute;
+  grid-template-columns: repeat(4, 17rem);
+  width: 75%;
+  margin-left: 15.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.detailsGrid {
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20%;
+}
+
+.detailsImgGrid {
+  display: grid;
+}
+
+.name {
+  display: flex;
+  margin-left: -0.5%;
+  font-size: 24px;
+  color: #1679ff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 0.5rem;
+}
+
+.location {
+  display: flex;
+  margin-top: -1.1rem;
+  width: max-content;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: #1679ff;
+}
+
+.linkName {
+  text-decoration: none;
+}
