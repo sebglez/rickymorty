@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./GridButton.module.css";
-import "normalize.css";
-export function GridButton() {
+
+export function GridButton({ onClick }) {
   return (
     <div className={styles.divButton}>
-      <button className={styles.buttonLoad}>Load next page</button>
+      <button className={styles.buttonLoad} onClick={onClick}>
+        Load next page
+      </button>
     </div>
   );
 }

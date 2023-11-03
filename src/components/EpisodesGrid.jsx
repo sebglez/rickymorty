@@ -7,13 +7,29 @@ import { GridButton } from "./GridButton";
 
 export function EpisodesGrid() {
   const [episodes, setEpisodes] = useState([]);
+  const [next, setNext] = useState();
+
+  // Función para cargar la siguiente página de episodios
+  const nextPage = () => {
+    if (next) {
+      axios.get(next).then(({ data }) => {
+        setEpisodes(data.results);
+        setNext(data.info.next);
+      });
+    }
+  };
+
   useEffect(() => {
     axios
       .get("https://rickandmortyapi.com/api/episode?page=1")
       .then(({ data }) => {
         setEpisodes(data.results);
+        setNext(data.info.next);
       });
   }, []);
+
+  // Agregar console.log para depuración
+  console.log("Value of 'next':", next);
 
   return (
     <>
@@ -35,7 +51,7 @@ export function EpisodesGrid() {
           );
         })}
       </div>
-      <GridButton />
+      <GridButton onClick={nextPage} disabled={next === null} />
     </>
   );
 }
