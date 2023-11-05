@@ -28,7 +28,6 @@ export function EpisodesGrid() {
       });
   }, []);
 
-  // Agregar console.log para depuración
   console.log("Value of 'next':", next);
 
   return (

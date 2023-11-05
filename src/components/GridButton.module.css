@@ -27,6 +27,7 @@
 
 .buttonLoad:disabled {
   display: flex;
+  cursor: default;
   margin-top: 0.25rem;
   padding: 10px;
   color: gray;
